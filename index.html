@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Assignment</title>
+  <!-- google fonts  -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css">
+  <!-- font awesome -->
+  <script src="https://kit.fontawesome.com/5ac8df1eaa.js" crossorigin="anonymous"></script>
+  <!-- bootstrap plugins -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+  <section id="title">
+    <div class="container-fluid">
+
+
+      <!-- Nav Bar -->
+      <nav class="navbar navbar-expand-lg navbar-light" style="background-color:#E4FBFF;">
+        <a class="navbar-brand" href="#">
+          <img src="images/cowinlogo.png" alt="" width="45%" height="24%">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#features">BOOKING</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#tableDisplay">STATISTICS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.cowin.gov.in/faq">FAQs</a>
+            </li>
+          </ul>
+
+        </div>
+
+      </nav>
+
+      <!-- Title -->
+
+      <div class="row">
+
+        <div class="col-lg-6">
+          <h1>Schedule your vaccine easily.</h1>
+          <h4 class="title-h3">To download Aarogya Setu Mobile App</h4>
+          <a href="https://play.google.com/store/apps/details?id=nic.goi.aarogyasetu">
+            <button type="button" class="btn btn-dark btn-lg download-button"><i class="fab fa-google-play"></i>Download</button>
+          </a>
+          <a href="https://apps.apple.com/in/app/aarogyasetu/id1505825357">
+            <button type="button" class="btn btn-outline-dark btn-lg download-button"><i class="fab fa-apple"></i>Download</button>
+          </a>
+
+        </div>
+        <div>
+          <img class="title-img" src="images/cowinbg.png" alt="image-cowin">
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Features BOOKING -->
+
+
+  <section id="features">
+
+    <div class="container" id="formDiv">
+      <div class="main">
+        <div class="main-center">
+          <h5>Fill in your details to book a appointment.</h5>
+          <form>
+            <!-- name -->
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <div class="input-group">
+                <span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
+                <input type="text" class="form-control" name="name" id="name" placeholder="Enter your Name" />
+              </div>
+            </div>
+            <!-- gender -->
+            <!-- <div class="form-group">
+              <label for="gender">select your gender</label>
+              <div class="input-group">
+                <span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
+                <input class="form-control" type="radio" id="male" name="radioButton" value="male">
+                <label for="male">MALE</label><br>
+                <input class="form-control" type="radio" id="female" name="radioButton" value="female">
+                <label for="female">FEMALE</label>
+
+              </div>
+            </div> -->
+            <!-- age -->
+
+            <div class="form-group">
+              <label for="age">Your age</label>
+              <div class="input-group">
+                <span class="input-group-addon"><i class="fa fa-users fa" aria-hidden="true"></i></span>
+                <input type="text" class="form-control" name="age" id="age" placeholder="Enter your age" />
+              </div>
+            </div>
+            <!-- vaccine type -->
+            <div class="form-group">
+              <label for="vaccineType">Select your Vaccine.</label>
+              <div class="input-group">
+                <span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
+                <select class="form-control" name="vaccineType" id="vaccineType">
+                  <option value="" selected>[select one]</option>
+                  <option value="Covisheild">
+                    Covisheild
+                  </option>
+                  <option value="Covaxin">
+                    Covaxin
+                  </option>
+                  </option>
+                </select>
+              </div>
+            </div>
+
+            <!-- date -->
+            <div class="form-group">
+              <label for="date">Date</label>
+              <div class="input-group">
+                <span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
+                <input class="form-control" type="date" id="date" name="date">
+              </div>
+            </div>
+            <!-- phone no -->
+            <div class="form-group">
+              <label for="phone">Enter your phone number:</label>
+              <div class="input-group">
+                <span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
+                <input type="tel" class="form-control" id="phone" name="phone" placeholder="Enter your 10 digit phone no.">
+              </div>
+
+            </div>
+            <!-- buttons -->
+            <div>
+              <input class="btn1" type="button" value="book" onclick="addData()">
+              <input class="btn1" type="submit" value="view" onclick="displayTable()">
+              <input class="btn1" type="button" value="update" onclick="updateRow(this)">
+              <input class="btn1" type="reset" name="reset" value="reset">
+            </div>
+
+            <!-- <button class="btn2" type="submit" name="submit" click="phonenumber(document.form-group#phone)">SUBMIT</button> -->
+          </form>
+        </div>
+        <!--main-center"-->
+      </div>
+    </div>
+
+  <!--main-->
+  <!--container-->
+
+
+    <div class="container">
+      <div >
+        <table id="mytable" class="list table table-hover">
+          <thead>
+            <tr >
+
+              <td>NAME</td>
+              <!-- <td>GENDER</td> -->
+              <td>AGE</td>
+              <td>VACCINE TYPE</td>
+              <td>DATE</td>
+              <td>PHONE NUMBER</td>
+            </tr>
+          </thead>
+          <tbody>
+
+          </tbody>
+
+        </table>
+
+      </div>
+</div>
+
+
+<div class="summary">
+  <input type="text" name="filter" value="Filter by age" id="age">
+  <input type="button" class="btn1" value="click" onclick="filter()">
+
+</div>
+
+<div class="summary">
+  <input type="text" name="filter2" value="Filter by type" id="vaccineType">
+  <input type="button" class="btn1" value="click" onclick="filter2()">
+
+</div>
+
+<section id="tableDisplay">
+
+
+
+
+<div class="container">
+  <table id="summaryTable" class="table list table-hover">
+
+  
+ <!-- <caption>Vaccination count</caption> -->
+ <tr>
+   Vaccination count
+ </tr>
+   <tr>
+     <th>Vaccination details</th>
+     <th>count</th>
+ </tr>
+   <tr>
+     <td>Age more than 45</td>
+     <td id="count1"></td>
+   </tr>
+   <tr>
+     <td>Age between 18 to 44</td>
+   <td id="count2"></td>
+   </tr>
+   <tr>
+     <td>Total vaccinations</td>
+     <td id="count"></td>
+   </tr>
+   <tr>
+ </table>
+
+</div>
+
+<div class="container">
+  <table id="summaryTable2" class="table list table-hover">
+
+  
+ 
+ <tr>
+   Vaccination Type
+ </tr>
+   <tr>
+     <th>Vaccination name</th>
+     <th>count</th>
+ </tr>
+   <tr>
+     <td>COVISHEILD</td>
+     <td id="countType"></td>
+   </tr>
+   <tr>
+     <td>COVAXIN</td>
+   <td id="countType2"></td>
+   </tr>
+   
+   <tr>
+ </table>
+
+</div>
+
+</section>
+
+</section>
+    <script type="text/javascript" src="function.js">
+      displayTable();
+    </script>
+  <div class="summary"
+
+
+
+  </div>
+<!-- 
+<section class="colored-section" id="cta">
+
+    <div class="container-fluid">
+
+      <h3 class="big-heading"> Get the App here. </h3>
+          <a href="https://play.google.com/store/apps/details?id=nic.goi.aarogyasetu">
+            <button type="button" class="btn btn-dark btn-lg download-button">
+              <i class="fab fa-google-play">
+                </i>Download
+            </button>
+          </a>
+          <a href="https://apps.apple.com/in/app/aarogyasetu/id1505825357">
+            <button type="button" class="btn btn-outline-dark btn-lg download-button">
+              <i class="fab fa-apple">
+                </i>Download
+            </button>
+          </a>
+          </div>
+  </section>
+ -->
+
+  <footer class="white-section" id="footer">
+    <div class="container-fluid footer-class">
+      <a href="https://www.linkedin.com/in/prashanth-s-p-bhardhwaj-52b66014b/">
+        <i class="social-icon fab  fa-linkedin fa-2x">
+          </i></a>
+      <a class="btn" href="mailto:name@email.com">
+        <i class="social-icon fas fa-envelope fa-2x"></i></a>
+      <p> ©Copyright 2021 Prashanth </p>
+    </div>
+  </footer>
+
+  <script src="function.js">
+  </script>
+</body>
+
+</html>
